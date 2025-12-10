@@ -1,46 +1,165 @@
-# Getting Started with Create React App
+# Problem Solving Exercises
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9.4-blue.svg)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-7.2.7-646CFF.svg)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4.1.17-38B2AC.svg)](https://tailwindcss.com/)
 
-## Available Scripts
+Een interactieve webapplicatie voor het oefenen van veelvoorkomende algoritmische problemen. Gebouwd met moderne webtechnologieën en een elegante glasmorfisme UI.
 
-In the project directory, you can run:
+Een interactieve webapplicatie voor het oefenen van veelvoorkomende algoritmische problemen. Gebouwd met moderne webtechnologieën en een elegante glasmorfisme UI.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **30+ Oefeningen**: Van basis algoritmen tot geavanceerde problemen
+- **Interactief**: Voer inputs in en zie direct resultaten
+- **Educatief**: Gedetailleerde uitleg van elk algoritme met voorbeelden, complexiteit en toepassingen
+- **Moderne UI**: Glasmorfisme design met transparante elementen en blur effecten
+- **Responsief**: Werkt perfect op desktop en mobiele apparaten
+- **TypeScript**: Volledig getypt voor betere ontwikkelervaring
+- **Vite**: Snelle ontwikkelserver en optimale builds
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 📚 Educatieve Inhoud
 
-### `npm test`
+Elke oefening bevat uitgebreide educatieve informatie:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Probleem Beschrijving**: Duidelijke uitleg van het algoritmische probleem
+- **Voorbeelden**: Meerdere input/output voorbeelden met uitleg
+- **Algoritme Uitleg**: Stap-voor-stap breakdown van de oplossingsaanpak
+- **Complexiteit Analyse**: Tijd- en ruimtecomplexiteit (Big O notatie)
+- **Toepassingen**: Praktische use cases en belang in software development
 
-### `npm run build`
+## 🚀 Technologieën
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend**: React 18 met TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS met custom glasmorfisme effecten
+- **Package Manager**: npm
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📋 Vereisten
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js (versie 18 of hoger)
+- npm (komt meegeleverd met Node.js)
 
-### `npm run eject`
+## 🛠️ Installatie
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. **Clone de repository**:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/HamedSadim1/problem-solving.git
+   cd problem-solving
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. **Installeer dependencies**:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Start de ontwikkelserver**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm run dev
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **Open in browser**:
+   Ga naar [http://localhost:5173](http://localhost:5173)
+
+## 📖 Gebruik
+
+- Selecteer een oefening uit de zijbalk
+- Voer de vereiste inputs in
+- Klik op "Run" om het algoritme uit te voeren
+- Bekijk het resultaat direct in de interface
+- Lees de gedetailleerde uitleg onderaan elke oefening voor educatieve informatie
+
+## 🏗️ Project Structuur
+
+```text
+src/
+├── components/
+│   ├── exercises.ts          # Oefeningen configuratie en types
+│   ├── Header.tsx            # App header component
+│   ├── Sidebar.tsx           # Navigatie sidebar
+│   ├── MainContent.tsx       # Hoofdinhoud container
+│   └── [exercise].tsx        # Individuele oefening componenten (30+)
+├── App.tsx                   # Hoofd app component
+├── index.tsx                 # App entry point
+└── index.css                 # Globale styles
+```
+
+## 🎯 Beschikbare Oefeningen
+
+- Two Sum
+- Running Sum
+- Pivot Index
+- Middle Index
+- String Ends With
+- Fibonacci Sequence
+- Palindrome Check
+- Reverse Array
+- Binary Search
+- Valid Parentheses
+- Max Subarray Sum
+- Anagram Check
+- Factorial
+- Prime Check
+- Longest Common Prefix
+- Merge Sorted Arrays
+- Climbing Stairs
+- Remove Duplicates
+- Roman to Integer
+- Power of Two
+- Happy Number
+- Single Number
+- Contains Duplicate
+- Intersection Arrays
+- Move Zeroes
+- Majority Element
+- FizzBuzz
+- Count Primes
+- Reverse Integer
+- Missing Number
+
+## 🔧 Scripts
+
+- `npm run dev` - Start ontwikkelserver
+- `npm run build` - Build voor productie
+- `npm run preview` - Preview productie build
+- `npm run lint` - Run ESLint
+
+## 🤝 Bijdragen
+
+Bijdragen zijn welkom! Volg deze stappen:
+
+1. Fork het project
+2. Maak een feature branch (`git checkout -b feature/nieuwe-oefening`)
+3. Commit je veranderingen (`git commit -m 'Voeg nieuwe oefening toe'`)
+4. Push naar de branch (`git push origin feature/nieuwe-oefening`)
+5. Open een Pull Request
+
+### Nieuwe Oefeningen Toevoegen
+
+1. Maak een nieuw component in `src/components/`
+2. Voeg het toe aan `exercises.ts`
+3. Update de `Exercise` type
+4. Test de functionaliteit
+
+## 📄 Licentie
+
+Dit project is gelicentieerd onder de MIT License - zie het [LICENSE](LICENSE) bestand voor details.
+
+## 👤 Auteur
+
+**Hamed Sadim** - [GitHub](https://github.com/HamedSadim1)
+
+## 🙏 Erkenningen
+
+- React community voor uitstekende documentatie
+- Tailwind CSS voor het geweldige utility-first framework
+- Vite voor de snelle build tool
+- Alle bijdragers aan de algoritmische problemen
+
+---
+
+Gemaakt met ❤️ voor het leren van algoritmen

@@ -1,57 +1,53 @@
 import React, { useState } from "react";
 
-const RunningSum = () => {
+const ReverseArray = () => {
   const [arrayInput, setArrayInput] = useState<string>("1,2,3,4,5");
   const [result, setResult] = useState<number[]>([]);
 
-  const handleRunningSum = () => {
+  const reverseArray = () => {
     const arr = arrayInput
       .split(",")
       .map((n) => parseInt(n.trim()))
       .filter((n) => !isNaN(n));
-    let runningSum = 0;
-    const runningSums = arr.map((num) => (runningSum += num));
-    setResult(runningSums);
+    setResult(arr.reverse());
   };
 
   return (
     <div className="p-6 bg-white/10 backdrop-blur-md rounded-lg shadow-lg border border-white/20 text-white">
-      <h2 className="text-2xl font-bold mb-4">Running Sum</h2>
+      <h2 className="text-2xl font-bold mb-4">Reverse Array</h2>
       <div className="mb-6">
         <p className="mb-3">
-          <strong>Probleem:</strong> Bereken de cumulatieve som (running sum)
-          van een array.
+          <strong>Probleem:</strong> Keer de volgorde van elementen in een array
+          om.
         </p>
         <p className="mb-3">
-          <strong>Uitleg:</strong> Elke positie in de output array bevat de som
-          van alle elementen tot en met die positie in de input array.
-        </p>
-        <p className="mb-3">
-          <strong>Voorbeeld:</strong> Input = [1, 2, 3, 4]
+          <strong>Voorbeeld:</strong> Input = [1, 2, 3, 4, 5]
           <br />
-          Output = [1, 3, 6, 10]
-          <br />
-          (1, 1+2=3, 1+2+3=6, 1+2+3+4=10)
+          Output = [5, 4, 3, 2, 1]
         </p>
         <p className="mb-3">
-          <strong>Voorbeeld:</strong> Input = [1, 1, 1, 1, 1]
-          <br />
-          Output = [1, 2, 3, 4, 5]
+          <strong>Built-in oplossing:</strong> Gebruik array.reverse() in
+          JavaScript
         </p>
         <p className="mb-3">
-          <strong>Benadering:</strong> Gebruik een variabele om de lopende som
-          bij te houden en bouw een nieuwe array op.
+          <strong>Handmatige implementatie:</strong>
+        </p>
+        <ul className="list-disc list-inside mb-3 ml-4">
+          <li>Two-pointer aanpak: wissel elementen van begin en eind</li>
+          <li>Iteratieve omwisseling</li>
+          <li>Recursie (minder efficiënt)</li>
+        </ul>
+        <p className="mb-3">
+          <strong>Tijdcomplexiteit:</strong> O(n) - Elk element wordt één keer
+          bewerkt
         </p>
         <p className="mb-3">
-          <strong>Tijdcomplexiteit:</strong> O(n) - Enkele pass door de array
+          <strong>Ruimtecomplexiteit:</strong> O(1) extra ruimte (in-place
+          modificatie)
         </p>
         <p className="mb-3">
-          <strong>Ruimtecomplexiteit:</strong> O(n) - Nieuwe array van dezelfde
-          grootte
-        </p>
-        <p className="mb-3">
-          <strong>Toepassingen:</strong> Cumulatieve statistieken, prefix sums
-          voor efficiënte range queries
+          <strong>Toepassingen:</strong> Stack operaties, string manipulatie,
+          data transformatie
         </p>
       </div>
       <div className="mb-4">
@@ -67,19 +63,19 @@ const RunningSum = () => {
         />
       </div>
       <button
-        onClick={handleRunningSum}
+        onClick={reverseArray}
         className="bg-white/20 text-white px-4 py-2 rounded hover:bg-white/30 transition-all shadow-md"
       >
-        Compute Running Sum
+        Reverse Array
       </button>
       <div className="mt-4">
         <strong>Original:</strong> [{arrayInput.split(",").join(", ")}]
       </div>
       <div className="mt-2">
-        <strong>Running Sum:</strong> [{result.join(", ")}]
+        <strong>Reversed:</strong> [{result.join(", ")}]
       </div>
     </div>
   );
 };
 
-export default RunningSum;
+export default ReverseArray;
